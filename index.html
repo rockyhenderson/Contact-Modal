@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //add form submition
+    </script>
+</head>
+
+<body>
+    <div class="contact-body">
+        <form action="form.php" method="post" onsubmit="return false" id="Form">
+            <!-- FIX THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+            <div class="inner-padding-wrapper">
+                <div class="contact-text-wrapper">
+                    <h1 id="heavy-h1">Contact  </h1>
+                    <h1> Us</h1><br>
+                </div>
+
+                <div class="radio-wrapper">
+                    <input type="radio" id="Hi" name="fav_language" value="CSS">
+                    <label for="css">Say Hi</label>
+                    <div style="width:20px;"></div>
+                    <input type="radio" id="Product" name="fav_language" value="JavaScript">
+                    <label for="javascript">Product</label><br>
+                </div>
+                <label class="label-text">Your <b>Name</b></label><br><br>
+                <input type="text" id="name" name="name" required class="form-box"><br><br>
+                <label class="label-text">Your <b>Email</b></label><br><br>
+                <input type="email" id="email" name="email" required class="form-box"><br><br>
+                <label class="label-text">Your <b>Question</b></label><br><br>
+                <textarea id="query" name="query" rows="4" cols="50" required class="form-box"></textarea><br><br>
+            </div>
+            <input type="submit" value="Send Message" id="submit-button">
+        </form>
+    </div>
+</body>
+
+</html>
